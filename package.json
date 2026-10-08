@@ -1,0 +1,42 @@
+{
+  "name": "drama-canvas-studio",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.19.0",
+  "engines": {
+    "node": ">=24.14.0 <25"
+  },
+  "scripts": {
+    "doctor": "node scripts/doctor.mjs",
+    "dev": "node scripts/dev.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "build": "tsc --noEmit && vite build --config apps/web/vite.config.ts",
+    "build:windows": "pnpm run build && node scripts/build-windows.mjs",
+    "verify:windows": "node scripts/verify-windows-release.mjs",
+    "start": "node --env-file-if-exists=.env --import tsx apps/server/src/index.ts",
+    "worker": "node --env-file-if-exists=.env --import tsx apps/server/src/worker/index.ts"
+  },
+  "dependencies": {
+    "@xyflow/react": "12.12.0",
+    "fastify": "5.12.5",
+    "lucide-react": "1.50.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "sharp": "0.35.5",
+    "yazl": "3.3.1",
+    "zod": "4.6.5",
+    "zustand": "5.0.15"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.0",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@types/yazl": "3.3.0",
+    "@vitejs/plugin-react": "6.1.1",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3",
+    "vite": "8.3.2"
+  }
+}

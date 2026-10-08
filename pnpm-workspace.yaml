@@ -1,0 +1,12 @@
+packages:
+  - apps/*
+  - packages/*
+allowBuilds:
+  esbuild: true
+  sharp: true
+fetchRetries: 2
+fetchTimeout: 180000
+minimumReleaseAgeExclude:
+  - lucide-react@1.50.0
+networkConcurrency: 4
+storeDir: .pnpm-store

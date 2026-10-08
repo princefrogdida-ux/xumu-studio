@@ -1,0 +1,11 @@
+{
+  "submitPath": "/video/jobs",
+  "queryPath": "/video/jobs/{id}",
+  "input": { "model": "model", "prompt": "prompt", "image": "image", "duration": "duration", "ratio": "aspect_ratio" },
+  "idPath": "data.id",
+  "statusPath": "data.status",
+  "outputUrlsPath": "data.output_urls",
+  "states": { "running": ["queued", "running", "processing"], "succeeded": ["succeeded", "completed"], "failed": ["failed", "cancelled"] },
+  "durations": [5, 10],
+  "ratios": ["16:9", "9:16"]
+}

@@ -1,0 +1,52 @@
+{
+  "version": "0.1.0",
+  "node": "v24.14.0",
+  "setup": "Xumu-Studio-0.1.0-Windows-x64-Setup.exe",
+  "size": 34842526,
+  "sha256": "3ca04d9c6a7041faeaa61feb5fb65166669ab34d1cabd7417fa5fbf7578afcef",
+  "runtimeDependencies": 58,
+  "payloadFiles": 3068,
+  "signed": false,
+  "copiedUserData": false,
+  "copiedSecrets": false,
+  "typecheck": "passed",
+  "regression": {
+    "passed": 61,
+    "failed": 0
+  },
+  "productionBuild": "passed",
+  "installation": {
+    "version": "0.1.0",
+    "at": "2026-10-08T09:48:21.326Z",
+    "payloadFilesVerified": 3068,
+    "paidCalls": 0,
+    "health": {
+      "ok": true,
+      "mode": "configurable",
+      "applicationVersion": "0.1.0",
+      "planVersion": "1.7",
+      "stage": "V1 本地发布",
+      "schemaVersion": 4,
+      "databaseVersion": 5,
+      "now": "2026-10-08T09:48:22.281Z",
+      "worker": {
+        "status": "online",
+        "lastSeen": "2026-10-08T09:48:22.170Z"
+      },
+      "activeTasks": 0,
+      "realCallsEnabled": false,
+      "invalidExportRecords": 0
+    },
+    "zipMediaFilesVerified": 6,
+    "zipStoryOrderVerified": true,
+    "mockTasks": 2,
+    "requestKeyDeduplicated": true,
+    "sharpImageAndMockVideo": true,
+    "portConflictPreservedRunningApp": true,
+    "upgradeWhileRunningRejected": true,
+    "stoppedUpgradeSucceeded": true,
+    "restartPreservedProjectAndTasks": true,
+    "uninstallPreservedData": true
+  },
+  "release": "pending"
+}

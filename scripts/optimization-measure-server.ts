@@ -1,0 +1,12 @@
+import path from 'node:path';
+import { pathToFileURL } from 'node:url';
+const baseline = process.argv.includes('--baseline');
+const root = path.resolve(baseline ? 'output/optimization/baseline-code' : '.');
+const { ProjectStore } = await import(pathToFileURL(path.join(root, 'apps/server/src/db/store.ts')).href);
+const { createApp } = await import(pathToFileURL(path.join(root, 'apps/server/src/api/app.ts')).href);
+const data = path.resolve(`output/optimization/${baseline ? 'baseline-validation-data' : 'validation-data'}`);
+const store = new ProjectStore(path.join(data, 'studio.sqlite'));
+const app = createApp(store, path.resolve(`output/optimization/browser-${baseline ? 'baseline' : 'optimized'}/dist/web`), path.join(data, 'media'));
+await app.listen({ host: '127.0.0.1', port: Number(process.env.PORT) });
+let stopping = false;
+process.on('message', async message => { if (message !== 'shutdown' || stopping) return; stopping = true; await app.close(); store.close(); if (process.connected) process.disconnect(); });
