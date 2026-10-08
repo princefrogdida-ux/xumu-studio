@@ -1,0 +1,12 @@
+node_modules/
+.pnpm-store/
+dist/
+data/
+data-before-restore-*/
+output/
+.env
+.env.*
+!.env.example
+config/*.local.json
+*.tsbuildinfo
+*.log
