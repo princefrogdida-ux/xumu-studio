@@ -48,5 +48,26 @@
     "restartPreservedProjectAndTasks": true,
     "uninstallPreservedData": true
   },
-  "release": "pending"
+  "release": {
+    "repository": "https://github.com/princefrogdida-ux/xumu-studio",
+    "visibility": "public",
+    "url": "https://github.com/princefrogdida-ux/xumu-studio/releases/tag/v0.1.0",
+    "tag": "v0.1.0",
+    "sourceCommit": "51ed6646a41e5231f5e52e03da1e537f44064bee",
+    "sourceTree": "6167080bef266f50be3d45cd3914b82f5e72e924",
+    "sourceFiles": 121,
+    "sourceTransport": "GitHub Git API after conventional Git network failures; byte-identical tree verified",
+    "draft": false,
+    "assetsUploaded": true,
+    "downloadedAndHashVerified": true,
+    "verifiedAt": "2026-10-08T10:19:45.335Z"
+  },
+  "originalDataReadOnlyAudit": {
+    "projects": 8,
+    "tasks": 13,
+    "generations": 13,
+    "assets": 21,
+    "paidCalls": 0,
+    "developmentServicesStoppedNormally": true
+  }
 }

@@ -32,7 +32,7 @@ Get-FileHash .\Xumu-Studio-0.1.0-Windows-x64-Setup.exe -Algorithm SHA256
 
 本轮在独立目录实际安装并逐文件核验，使用安装版 Node 与生产依赖启动空数据库，验证图片/视频 Mock、相同请求幂等、三镜头素材 ZIP 解压及 6 个媒体 SHA-256、剧情顺序、端口冲突保护、运行时拒绝覆盖安装、停止后覆盖安装、项目/任务重启恢复、卸载保留数据。原开发数据不参与安装测试，收费调用为 0。
 
-类型检查、61/61 回归与生产构建通过。公开验收摘要见 [windows-0.1.0.json](validation/windows-0.1.0.json)。本机实际安装/升级/卸载和运行日志保留在 `output/releases/`，不随源码发布；本轮验证不是另一台物理电脑的人工体验验收。
+类型检查、61/61 回归与生产构建通过。公开源码与 v0.1.0 Release 已发布，安装包 34,842,526 B；服务端 SHA-256 与完整附件实际下载校验均为 `3ca04d9c6a7041faeaa61feb5fb65166669ab34d1cabd7417fa5fbf7578afcef`。公开验收摘要见 [windows-0.1.0.json](validation/windows-0.1.0.json)。本机实际安装/升级/卸载和运行日志保留在 `output/releases/`，不随源码发布；本轮验证不是另一台物理电脑的人工体验验收。
 
 源码构建流程（Windows x64）：
 
